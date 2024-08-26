@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+    <h1>Edit your post:</h1>
+    <form action="/edit" method="POST">
+        <!-- Hidden input field for the post ID -->
+        <input type="hidden" name="id" value="<%= id %>">
+        <!-- Input field for the post content -->
+        <input type="text" name="post" value="<%= post %>" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
