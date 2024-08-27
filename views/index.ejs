@@ -1,4 +1,4 @@
-<%- include('partials/header.ejs') %>
+<%- include('header.ejs') %>
 <body>
     
     <h1>Welcome to Ilay's Blog!</h1>
@@ -14,10 +14,10 @@
     <div>
         <h2>Exsiting posts:</h2>
         <% for(let i=0;i<posts.length;i++){ %>
-            <li>
-                <%= posts[i].post %>
+            <li style="list-style-type: none;">
+                <p style="font-size: 18px;"><%= posts[i].post %></p>
                 <br/>
-                <%= posts[i].date %>
+                <p style="font-size: 12px;"><%= posts[i].date %></p>
                 <form action="/edit" method="GET" style="display:inline;">
                     <input type="hidden" name="id" value="<%= posts[i].id %>" />
                     <button type="submit">Edit</button>
@@ -32,3 +32,4 @@
     
 </body>
 
+<%- include('footer.ejs') %>

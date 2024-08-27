@@ -1,0 +1,97 @@
+
+
+input[type="text"] {
+    width: 50%;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    padding: 5px;
+}
+input[type="submit"] {
+    background-color: rgb(43, 43, 255);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+h1 {
+    text-align: center;
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h2 {
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h5 {
+    text-align: center;
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Your Chosen Font", Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+
+button {
+    background-color: rgb(43, 43, 255);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li p {
+    margin: 0;
+}
+
+li p:first-child {
+    font-size: 18px;
+    color: #333;
+}
+
+li p:last-child {
+    font-size: 12px;
+    color: #888;
+}
+
+li .date {
+    margin-top: 10px; /* Add more margin between post and date */
+    font-size: 14px;
+    color: #555;
+}

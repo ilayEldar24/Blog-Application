@@ -3,6 +3,15 @@ import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const app = express();
+const port = 3000;
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({extended:true}));
+var posts = [];
+var postId = 0;
+
+
+
 
 class Post {
     #post;
@@ -39,6 +48,8 @@ class Post {
         return this.#id;
     }
 }
+
+
 function isValidPost(post){
     if(post.length > 0){
         return true;
@@ -46,6 +57,8 @@ function isValidPost(post){
     return false;
 
 }
+
+
 function formatDate(date) {
     // Extract date components
     const day = String(date.getDate()).padStart(2, '0');
@@ -70,13 +83,6 @@ function formatDate(date) {
 
 
  
-const app = express();
-const port = 3000;
-app.use(express.static('public'))
-app.use(bodyParser.urlencoded({extended:true}));
-var posts = [];
-var postId = 0;
-
 
 
 app.get('/', (req,res)=>{
@@ -140,11 +146,6 @@ app.post('/deletepost', (req,res)=>{
         }
     }
 })
-
-
-
-
-
 
 
 app.listen(port, () => {
